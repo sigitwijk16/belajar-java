@@ -1,13 +1,12 @@
 public class HelloWorld {
-        public static void main(String[] args) {
-            int result = sum(5, 10);
-            System.out.println(result);
-        }
-        public static int sum(int start, int end) {
-            if (end > start) {
-                return end + sum(start, end - 1);
-            } else {
-                return end;
-            }
-        }
+    static void myMethod(String name, int age) {
+        int ageLater = age + 10;
+        System.out.println("Nama saya adalah " + name);
+        System.out.println("Umur saya " + age);
+        System.out.println("Sepuluh tahun lagi saya berumur " + ageLater);
+    }
+
+    public static void main(String[] args) {
+        myMethod("Naruto", 19);
+    }
 }
